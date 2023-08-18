@@ -1,0 +1,10 @@
+<svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1">
+<path id="Line 4" d="M17 22.5543L17 33.0033" stroke="#698582" stroke-width="2" stroke-linecap="round"/>
+<path id="Line 3" d="M1 16.6788H11.6667" stroke="#698582" stroke-width="2" stroke-linecap="round"/>
+<path id="Line 1" d="M17 1.0033L17 11.4523" stroke="#698582" stroke-width="2" stroke-linecap="round"/>
+<path id="Line 2" d="M22.3335 16.6768H33.0002" stroke="#698582" stroke-width="2" stroke-linecap="round"/>
+<path id="Ellipse 1" d="M26.6668 16.6704C26.6668 21.8696 22.3585 26.1194 17.0002 26.1194C11.6419 26.1194 7.3335 21.8696 7.3335 16.6704C7.3335 11.4712 11.6419 7.22144 17.0002 7.22144C22.3585 7.22144 26.6668 11.4712 26.6668 16.6704Z" stroke="#698582" stroke-width="2"/>
+<ellipse id="Ellipse 2" cx="16.9998" cy="16.6789" rx="1.33333" ry="1.30612" fill="#698582"/>
+</g>
+</svg>

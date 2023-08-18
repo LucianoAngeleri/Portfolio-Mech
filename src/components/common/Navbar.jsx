@@ -35,18 +35,19 @@ const Navbar = () => {
                                     <div className="hidden my-auto sm:ml-6 sm:block">
                                         <ul className="flex gap-3 items-center">
                                             {linksNavegacion.map((item) => (
-                                                <li><a
-                                                    key={item.name}
-                                                    href={item.href}
-                                                    className={classNames(
-                                                        item.current
-                                                            ? "bg-gray-900 text-white"
-                                                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                                                        "rounded-md px-3 py-2 text-sm font-medium"
-                                                    )}
-                                                    aria-current={item.current ? "page" : undefined}>
-                                                    {item.name}
-                                                </a></li>
+                                                <li key={item.name}>
+                                                    <a
+                                                        href={item.href}
+                                                        className={classNames(
+                                                            item.current
+                                                                ? "bg-gray-900 text-white"
+                                                                : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                                                            "rounded-md px-3 py-2 text-sm font-medium"
+                                                        )}
+                                                        aria-current={item.current ? "page" : undefined}>
+                                                        {item.name}
+                                                    </a>
+                                                </li>
                                             ))}
                                         </ul>
                                     </div>
