@@ -20,16 +20,16 @@ const SeccionHero = () => {
                         </div>
                     </div>
                 </div>
-                <div className="perfil-profesional">
-                    <h2 className="font-display font-black text-3xl text-dark">Acerca de mí</h2>
-                    <hr />
-                    <div className="exp-descripci-n">
-                        <p className="text-base">
-                            El diseño mecánico es mi pasión por lo que estoy creando un proyecto personal enfocado en brindar soluciones
-                            de diseño personalizadas y de calidad, haciendo uso de la impresión 3D y SOLIDWORKS.&nbsp;&nbsp;
+                <div className="container">
+                    <h2 className="font-display font-black text-3xl text-dark mb-2">Acerca de mí</h2>
+                    <hr className="text-primary border-dashed mb-3"/>
+                    <div className="container">
+                        <p className="text-dark text-base font-body">
+                            El <b>diseño mecánico</b> es mi pasión por lo que estoy creando un proyecto personal enfocado en <b>brindar soluciones
+                            de diseño personalizadas y de calidad</b>, haciendo uso de la <b>impresión 3D y SOLIDWORKS</b>.&nbsp;&nbsp;
                             <br />
-                            Mi enfoque se caracteriza por la creatividad, la atención a los detalles y la búsqueda constante de la
-                            excelencia.
+                            Mi enfoque se caracteriza por la <b>creatividad</b>, la <b>atención a los detalles</b> y la <b>búsqueda constante de la
+                            excelencia.</b>
                         </p>
                     </div>
                 </div>

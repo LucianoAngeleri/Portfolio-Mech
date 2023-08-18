@@ -29,6 +29,7 @@ export default {
     fontFamily:{
       display: '"Darker Grotesque", sans-serif',
       heading: '"Encode Sans", sans-serif',
+      body: '"Encode Sans", sans-serif',
     },
     extend: {
   },
