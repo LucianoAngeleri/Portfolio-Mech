@@ -12,7 +12,7 @@ function classNames(...classes) {
 }
 const Navbar = () => {
     return (
-        <header className="w-full fixed top-0 shadow-xl bg-primary text-light">
+        <header className="w-full fixed top-0 shadow-xl bg-primary text-light z-10">
             <Disclosure as="nav">
                 {({ open }) => (
                     <>
