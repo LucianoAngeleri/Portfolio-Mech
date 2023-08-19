@@ -1,7 +1,7 @@
-const SeccionTexto = ({ titulo, contenido }) => {
+const SeccionTexto = ({ id, titulo, contenido }) => {
 
     return (
-        <section className="py-6 bg-light">
+        <section className="py-6 bg-light" id={id}>
             <div className="container">
                 <h2 className="font-display font-black text-3xl text-dark mb-2">
                     {titulo}

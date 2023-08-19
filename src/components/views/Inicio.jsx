@@ -1,5 +1,6 @@
 import SeccionTexto from "../common/SeccionTexto";
 import SeccionHero from "./SeccionHero";
+import SeccionTech from "./SeccionTech";
 
 const seccionAcercaDeMi = {
     titulo: "Acerca de mí",
@@ -14,7 +15,8 @@ const Inicio = () => {
     return (
         <>
             <SeccionHero />
-            <SeccionTexto titulo={seccionAcercaDeMi.titulo} contenido={seccionAcercaDeMi.contenido} palabrasClaves={seccionAcercaDeMi.palabrasClaves} />
+            <SeccionTexto id={"seccionAcerca"} titulo={seccionAcercaDeMi.titulo} contenido={seccionAcercaDeMi.contenido} palabrasClaves={seccionAcercaDeMi.palabrasClaves} />
+            <SeccionTech/>
         </>
     );
 };
