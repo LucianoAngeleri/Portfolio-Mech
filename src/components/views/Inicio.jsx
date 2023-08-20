@@ -1,5 +1,6 @@
 import SeccionTexto from "../common/SeccionTexto";
 import SeccionHero from "./SeccionHero";
+import SeccionProyectos from "./SeccionProyectos";
 import SeccionTech from "./SeccionTech";
 
 const seccionAcercaDeMi = {
@@ -16,7 +17,8 @@ const Inicio = () => {
         <>
             <SeccionHero />
             <SeccionTexto id={"seccionAcerca"} titulo={seccionAcercaDeMi.titulo} contenido={seccionAcercaDeMi.contenido} palabrasClaves={seccionAcercaDeMi.palabrasClaves} />
-            <SeccionTech/>
+            <SeccionProyectos id={"seccionProyectos"}/>
+            <SeccionTech id={"seccionTecnologias"}/>
         </>
     );
 };

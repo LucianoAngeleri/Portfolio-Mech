@@ -6,7 +6,7 @@ const linksNavegacion = [
     { name: "Acerca de Mi", href: "#seccionAcerca", current: false },
     { name: "CV", href: "#seccionCV", current: false },
     { name: "Proyectos", href: "#seccionProyectos", current: false },
-    { name: "Tecnolgías", href: "#seccionTecnolgias", current: false },
+    { name: "Tecnolgías", href: "#seccionTecnologias", current: false },
 ];
 
 function classNames(...classes) {
