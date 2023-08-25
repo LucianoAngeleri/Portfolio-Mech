@@ -1,17 +1,21 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import CardProyecto from './CardProyecto';
-
+import BotonesNav from './BotonesNav';
 
 const SliderProyectos = ({ proyectos }) => {
     return (
         <Swiper
             slidesPerView={1}
-            spaceBetween={32}
-            centeredSlides={true}
-            navigation={true}
+            spaceBetween={16}
+            navigation={{
+                nextEl: '.sliderProyectos-btn-next',
+                prevEl: '.sliderProyectos-btn-prev',
+            }}
+            pagination={true}
             breakpoints={{
                 640: {
                     slidesPerView: 1,
@@ -26,9 +30,12 @@ const SliderProyectos = ({ proyectos }) => {
                     spaceBetween: 32,
                 },
             }}
-            modules={[Navigation]}
+            modules={[Navigation,Pagination]}
             className="sliderProyectos"
         >
+            <div  slot="container-start">
+             <BotonesNav bgColor="primary" textColor="dark" borderColor="dark" classBtnSwiper="sliderProyectos-btn"/>
+            </div>
             {proyectos.map((proyecto, index) => (
                 <SwiperSlide key={index} className='my-auto py-6'>
                     <CardProyecto proyecto={proyecto} />
