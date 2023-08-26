@@ -19,14 +19,14 @@ const SliderProyectos = ({ proyectos }) => {
             breakpoints={{
                 640: {
                     slidesPerView: 1,
-                    spaceBetween: 32,
+                    spaceBetween: 16,
                 },
                 768: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 32,
                 },
                 1024: {
-                    slidesPerView: 6,
+                    slidesPerView: 3,
                     spaceBetween: 32,
                 },
             }}

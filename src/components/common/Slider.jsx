@@ -8,9 +8,7 @@ const Slider = ({ tecnologias }) => {
         <Swiper
             slidesPerView={1}
             spaceBetween={32}
-            loop={true}
-            centeredSlides={true}
-            
+            loop={true}           
             autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,

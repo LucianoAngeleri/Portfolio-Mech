@@ -8,8 +8,6 @@ const SliderImgCard = ({ proyecto }) => {
     return (
         <Swiper
             slidesPerView={1}
-            spaceBetween={32}
-            centeredSlides={true}
             navigation={{
                 nextEl: '.sliderCardImg-btn-next',
                 prevEl: '.sliderCardImg-btn-prev',
@@ -17,13 +15,13 @@ const SliderImgCard = ({ proyecto }) => {
             modules={[Navigation]}
             className="sliderImgCard"
         >
-            <div  slot="container-end">
+            <div  slot="container-end" className='pb-4'>
              <BotonesNav bgColor="light" textColor="primary" borderColor="primary" classBtnSwiper="sliderCardImg-btn"/>
             </div>
             {
             proyecto.imagenes.map((img, index) => (
                 <SwiperSlide key={index}>
-                    <img src={img} alt={`Imágen de Proyecto - ${index + 1}`} />
+                    <img src={img} alt={`Imágen de Proyecto - ${index + 1}`} className='w-60 mx-auto'/>
                 </SwiperSlide>
             ))
             }
