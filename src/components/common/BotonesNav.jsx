@@ -1,18 +1,38 @@
+import React from "react";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/solid";
 
-const BotonesNav = ({bgColor,textColor,borderColor, classBtnSwiper}) => {
-    return (
-        <div className="justify-center items-center flex">
-            <div className={`p-2 bg-${bgColor} rounded-3xl shadow-lg border-2 border-${borderColor} gap-12 flex text-${textColor}`}>
-            <button className={`${classBtnSwiper}-prev w-6 h-6`} type="button">
-                <ChevronLeftIcon />
-            </button>
-            <button className={`${classBtnSwiper}-next w-6 h-6`} type="button">
-                <ChevronRightIcon />
-            </button>
-            </div>
-        </div>
-    );
+const BotonesNav = ({
+  bgColor,
+  bgColorHover,
+  bgColorActive,
+  bgColorDisabled,
+  textColor,
+  textColorHover,
+  textColorActive,
+  textColorDisabled,
+  borderColor,
+  classBtnSwiper,
+}) => {
+  return (
+    <div className="justify-center items-center flex py-2">
+      <div
+        className={`${bgColor} rounded-full shadow-md border-2 border-${borderColor} flex`}
+      >
+        <button
+          className={`${classBtnSwiper}-prev ${textColor} hover:${bgColorHover} hover:${textColorHover} active:${bgColorActive} active:${textColorActive} disabled:${textColorDisabled} disabled:${bgColorDisabled} w-12 h-12 p-2 rounded-full m-1 `}
+          type="button"
+        >
+          <ChevronLeftIcon />
+        </button>
+        <button
+          className={`${classBtnSwiper}-next ${textColor} hover:${bgColorHover} hover:${textColorHover} active:${textColorActive} active:${bgColorActive} disabled:${textColorDisabled} disabled:${bgColorDisabled} w-12 h-12 p-2 rounded-full m-1`}
+          type="button"
+        >
+          <ChevronRightIcon />
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default BotonesNav;

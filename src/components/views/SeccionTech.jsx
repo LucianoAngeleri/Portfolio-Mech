@@ -1,6 +1,6 @@
 import Slider from "../common/Slider";
 
-const SeccionTech = ({id}) => {
+const SeccionTech = ({ id }) => {
     const tecnologias = [
         {
             nombre: "Solidworks",
@@ -27,8 +27,8 @@ const SeccionTech = ({id}) => {
         <section className='py-6 bg-light' id={id}>
             <div className="container">
                 <h3 className="font-display font-black text-3xl text-dark mb-2">¿Qué tecnologías y herramientas utilizo?</h3>
-                <hr className="text-primary border-dashed mb-3" />
-                <Slider tecnologias={tecnologias}/>
+                <hr className="text-primary-400 border-dashed mb-3" />
+                <Slider tecnologias={tecnologias} />
             </div>
         </section>
     );

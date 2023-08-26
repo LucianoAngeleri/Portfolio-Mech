@@ -14,7 +14,7 @@ function classNames(...classes) {
 }
 const Navbar = () => {
     return (
-        <header className="w-full fixed top-0 shadow-xl bg-primary text-light z-10">
+        <header className="w-full fixed top-0 shadow-xl bg-primary-400 text-light z-10">
             <Disclosure as="nav">
                 {({ open }) => (
                     <>

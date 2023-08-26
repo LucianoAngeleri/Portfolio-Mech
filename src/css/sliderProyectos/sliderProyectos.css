@@ -1,0 +1,13 @@
+.swiper-pagination {
+    position: relative;
+    --swiper-pagination-color: var(--color-primary);
+    padding: 1rem;
+    --swiper-pagination-bullet-size: 1rem;
+    --swiper-pagination-bullet-inactive-color: var(--color-primary);
+    --swiper-pagination-bullet-inactive-opacity: 0.2;
+    --swiper-pagination-bullet-horizontal-gap: 1rem;
+}
+
+.swiper-pagination-bullet-active {
+    --swiper-pagination-bullet-size: 1.25rem;
+}
